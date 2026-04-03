@@ -6,85 +6,105 @@
 
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f5f7fb;
-      color: #222;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #eef1f7, #dfe6f3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
+    /* A4 Page */
+    .page {
+      width: 794px;
+      min-height: 1123px;
       background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      padding: 40px 50px;
+      box-shadow: 
+        0 0 0 1px rgba(0,0,0,0.05),
+        0 20px 50px rgba(0,0,0,0.15);
+      border-radius: 6px;
+      position: relative;
     }
 
-    h1 { margin-bottom: 5px; font-size: 32px; }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 600;
+    }
 
     h2 {
-      border-bottom: 2px solid #e0e0e0;
-      padding-bottom: 6px;
-      margin-top: 30px;
-      font-size: 20px;
+      font-size: 15px;
+      margin-top: 22px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
     }
 
     .contact {
-      font-size: 14px;
-      margin-bottom: 20px;
-      color: #555;
+      font-size: 13px;
+      color: #444;
+      margin-top: 6px;
+      line-height: 1.5;
     }
 
     a {
-      color: #5b6cff;
+      color: #4a5cff;
       text-decoration: none;
       font-weight: 500;
     }
 
-    a:hover { text-decoration: underline; }
+    .section {
+      font-size: 14px;
+      line-height: 1.6;
+    }
 
-    .section { margin-top: 15px; }
+    ul {
+      padding-left: 18px;
+      margin: 6px 0;
+    }
 
-    ul { padding-left: 20px; }
+    li {
+      margin-bottom: 4px;
+    }
 
-    .card {
-      background: #fafbff;
-      padding: 15px;
-      border-radius: 8px;
-      margin-top: 10px;
-      border: 1px solid #eee;
+    .project {
+      margin-bottom: 12px;
+    }
+
+    .project-title {
+      font-weight: 600;
     }
 
     .tag {
-      font-size: 13px;
+      font-size: 12px;
       color: #666;
-      margin-bottom: 5px;
+      margin-bottom: 3px;
     }
 
     .top-bar {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
     }
 
     .btn {
-      background: #5b6cff;
+      font-size: 12px;
+      background: #4a5cff;
       color: white;
-      padding: 8px 14px;
-      border-radius: 6px;
-      font-size: 13px;
-      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 4px;
     }
-
-    .btn:hover { opacity: 0.9; }
 
   </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="page">
 
   <div class="top-bar">
     <div>
@@ -109,20 +129,19 @@
 
   <h2>Technical Skills</h2>
   <div class="section">
-    <b>Languages:</b> Python, Java <br>
+    <b>Languages:</b> Python, Java, C <br>
     <b>Libraries:</b> NumPy, Pandas, scikit-learn <br>
-    <b>AI/NLP:</b> RAG, Semantic Search, Vector Embeddings, LLM Integration <br>
-    <b>Tools:</b> Git, GitHub
+    <b>AI/NLP:</b> Retrieval-Augmented Generation (RAG), Semantic Search, Vector Embeddings, Text Preprocessing, TF-IDF, LLM Integration <br>
+    <b>Tools:</b> Git, GitHub, Jupyter Notebook, Google Cloud <br>
+    <b>Concepts:</b> Machine Learning, Data Structures & Algorithms, REST APIs, Software Engineering Fundamentals, OOP, Digital Image Processing<br>
+    <b>Security Basics:</b> Symmetric Key Encryption, AES Basics, Secure Data Handling
   </div>
 
   <h2>Projects</h2>
 
-  <div class="card">
-    <b>Enterprise Knowledge Retrieval System (RAG)</b>
-    <div class="tag">
-      🔗 <a href="https://github.com/Anag0710/enterprise-rag-system" target="_blank">View Code</a> |
-      📄 <a href="#" target="_blank">Project Details</a>
-    </div>
+  <div class="project">
+    <div class="project-title">Enterprise Knowledge Retrieval System (RAG)</div>
+    <div class="tag">🔗 <a href="https://github.com/Anag0710/enterprise-rag-system">GitHub</a></div>
     <ul>
       <li>Built RAG-based system for querying enterprise documents</li>
       <li>Implemented semantic search using vector embeddings</li>
@@ -130,39 +149,52 @@
     </ul>
   </div>
 
-  <div class="card">
-    <b>Portable Ventilator System</b>
-    <div class="tag">
-      🔗 <a href="#" target="_blank">View Code</a>
-    </div>
+  <div class="project">
+    <div class="project-title">Context-Aware Sentiment Analysis (BERT)</div>
+    <div class="tag">🔗 <a href="#">GitHub</a></div>
     <ul>
-      <li>Designed ventilator with real-time monitoring</li>
-      <li>Arduino-based system with sensors</li>
-      <li><b>Winner at Project Expo (2024)</b></li>
+      <li>Developed transformer-based sentiment analysis using BERT</li>
+      <li>Handled contextual meaning and polarity shifts in text</li>
     </ul>
   </div>
 
-  <div class="card">
-    <b>Applied Data Science Capstone</b>
-    <div class="tag">
-      🔗 <a href="#" target="_blank">View Code</a>
-    </div>
+  <div class="project">
+    <div class="project-title">Abstractive News Summarization (BART/T5)</div>
+    <div class="tag">🔗 <a href="#">GitHub</a></div>
     <ul>
-      <li>Performed data analysis and predictive modeling</li>
+      <li>Generated summaries from long-form text using transformer models</li>
+      <li>Applied sequence-to-sequence NLP techniques</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="project-title">Secure File Encryption System (AES)</div>
+    <div class="tag">🔗 <a href="#">GitHub</a></div>
+    <ul>
+      <li>Implemented AES-based encryption/decryption system</li>
+      <li>Used password-based key derivation for security</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="project-title">Portable Ventilator System</div>
+    <ul>
+      <li>Arduino-based ventilator with real-time monitoring</li>
+      <li><b>Winner – Project Expo 2024</b></li>
     </ul>
   </div>
 
   <h2>Experience</h2>
 
-  <div class="card">
-    <b>Python Developer — Entospark Technologies</b> (2025–2026)
+  <div class="project">
+    <div class="project-title">Python Developer — Entospark Technologies</div>
     <ul>
       <li>Worked on backend logic and features</li>
     </ul>
   </div>
 
-  <div class="card">
-    <b>Co-Chair — Student Council</b> (2024–2025)
+  <div class="project">
+    <div class="project-title">Co-Chair — Student Council</div>
     <ul>
       <li>Led events and managed teams</li>
     </ul>
@@ -176,10 +208,10 @@
   <h2>Certifications</h2>
   <div class="section">
     <ul>
-      <li>IBM Data Science — <a href="#" target="_blank">Credential</a></li>
-      <li>Microsoft AI/ML — <a href="#" target="_blank">Credential</a></li>
-      <li>IBM RAG — <a href="#" target="_blank">Credential</a></li>
-      <li>Google Cloud — <a href="#" target="_blank">Credential</a></li>
+      <li>IBM Data Science</li>
+      <li>Microsoft AI/ML</li>
+      <li>IBM RAG</li>
+      <li>Google Cloud</li>
     </ul>
   </div>
 
