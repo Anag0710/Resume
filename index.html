@@ -6,169 +6,184 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f5f7fb;
       color: #222;
-      line-height: 1.6;
-      max-width: 900px;
     }
 
-    h1 {
-      margin-bottom: 5px;
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
+
+    h1 { margin-bottom: 5px; font-size: 32px; }
 
     h2 {
-      border-bottom: 2px solid #444;
-      padding-bottom: 5px;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 6px;
       margin-top: 30px;
+      font-size: 20px;
     }
 
     .contact {
       font-size: 14px;
       margin-bottom: 20px;
+      color: #555;
     }
 
     a {
-      color: #0066cc;
+      color: #5b6cff;
       text-decoration: none;
+      font-weight: 500;
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
+    a:hover { text-decoration: underline; }
 
-    ul {
-      padding-left: 20px;
-    }
+    .section { margin-top: 15px; }
 
-    .section {
-      margin-top: 15px;
+    ul { padding-left: 20px; }
+
+    .card {
+      background: #fafbff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 10px;
+      border: 1px solid #eee;
     }
 
     .tag {
       font-size: 13px;
-      color: #555;
+      color: #666;
+      margin-bottom: 5px;
     }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      background: #5b6cff;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .btn:hover { opacity: 0.9; }
 
   </style>
 </head>
 
 <body>
 
-  <h1>Anag Aggarwal</h1>
+<div class="container">
 
-  <div class="contact">
-    <b>Data Science | AI/ML | Python Developer</b><br>
-    📧 anag.builds@gmail.com <br>
-    🔗 <a href="https://github.com/Anag0710" target="_blank">GitHub</a> |
-    <a href="https://www.linkedin.com/in/anagaggarwal/" target="_blank">LinkedIn</a> <br>
-    📍 Jaipur, Rajasthan <br>
-    🌐 English, Hindi
+  <div class="top-bar">
+    <div>
+      <h1>Anag Aggarwal</h1>
+      <div class="contact">
+        Data Science | AI/ML | Python Developer <br>
+        📧 anag.builds@gmail.com <br>
+        🔗 <a href="https://github.com/Anag0710" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/anagaggarwal/" target="_blank">LinkedIn</a> <br>
+        📍 Jaipur, Rajasthan | English, Hindi
+      </div>
+    </div>
+
+    <a class="btn" href="resume.pdf" target="_blank">Download PDF</a>
   </div>
 
   <h2>Overview</h2>
   <div class="section">
-    Third-year Computer Science student with strong interest in Artificial Intelligence and Machine Learning,
-    particularly Natural Language Processing. Experienced in building real-world AI systems using Retrieval-Augmented
-    Generation (RAG), semantic search, and LLM-based architectures. Alongside technical development, actively involved
-    in leadership roles demonstrating strong communication, coordination, and problem-solving skills.
+    Third-year Computer Science student with strong interest in AI and Machine Learning,
+    particularly NLP. Experienced in building real-world AI systems using RAG and LLMs.
   </div>
 
   <h2>Technical Skills</h2>
   <div class="section">
     <b>Languages:</b> Python, Java <br>
     <b>Libraries:</b> NumPy, Pandas, scikit-learn <br>
-    <b>AI/NLP:</b> RAG, Semantic Search, Vector Embeddings, Text Preprocessing, LLM Integration <br>
-    <b>Tools:</b> Git, GitHub <br>
-    <b>Concepts:</b> Machine Learning, Data Structures, Software Engineering Fundamentals
+    <b>AI/NLP:</b> RAG, Semantic Search, Vector Embeddings, LLM Integration <br>
+    <b>Tools:</b> Git, GitHub
   </div>
 
   <h2>Projects</h2>
 
-  <div class="section">
-    <b>Enterprise Knowledge Retrieval System (RAG-based)</b>
+  <div class="card">
+    <b>Enterprise Knowledge Retrieval System (RAG)</b>
     <div class="tag">
-      🔗 Repo: <a href="#">Add GitHub Link</a> |
-      📄 Docs: <a href="#">Add Demo / Docs Link</a>
+      🔗 <a href="https://github.com/Anag0710/enterprise-rag-system" target="_blank">View Code</a> |
+      📄 <a href="#" target="_blank">Project Details</a>
     </div>
     <ul>
-      <li>Built a RAG-based system for querying enterprise documents</li>
+      <li>Built RAG-based system for querying enterprise documents</li>
       <li>Implemented semantic search using vector embeddings</li>
-      <li>Integrated LLM APIs for context-aware responses</li>
-      <li>Designed full pipeline: ingestion → embedding → retrieval → generation</li>
+      <li>Integrated LLM APIs for responses</li>
     </ul>
   </div>
 
-  <div class="section">
-    <b>Portable Ventilator System (AICTE Idea Lab)</b>
+  <div class="card">
+    <b>Portable Ventilator System</b>
     <div class="tag">
-      🔗 Repo: <a href="#">Add GitHub Link</a>
+      🔗 <a href="#" target="_blank">View Code</a>
     </div>
     <ul>
-      <li>Designed a portable ventilator with real-time monitoring</li>
-      <li>Integrated sensors for SpO₂, heart rate, and environment</li>
-      <li>Used Arduino for control and data acquisition</li>
-      <li><b>Winner at Kalanidhi & Udhbhav Project Expo (2024)</b></li>
+      <li>Designed ventilator with real-time monitoring</li>
+      <li>Arduino-based system with sensors</li>
+      <li><b>Winner at Project Expo (2024)</b></li>
     </ul>
   </div>
 
-  <div class="section">
-    <b>Applied Data Science Capstone (IBM)</b>
+  <div class="card">
+    <b>Applied Data Science Capstone</b>
     <div class="tag">
-      🔗 Repo: <a href="#">Add GitHub Link</a>
+      🔗 <a href="#" target="_blank">View Code</a>
     </div>
     <ul>
-      <li>Performed end-to-end data analysis and predictive modeling</li>
-      <li>Worked on real-world datasets and evaluation metrics</li>
+      <li>Performed data analysis and predictive modeling</li>
     </ul>
   </div>
 
   <h2>Experience</h2>
 
-  <div class="section">
+  <div class="card">
     <b>Python Developer — Entospark Technologies</b> (2025–2026)
     <ul>
-      <li>Developed Python-based applications and backend logic</li>
-      <li>Worked on feature implementation and optimization</li>
+      <li>Worked on backend logic and features</li>
     </ul>
   </div>
 
-  <div class="section">
-    <b>Co-Chair — Student Council, PIET Jaipur</b> (2024–2025)
+  <div class="card">
+    <b>Co-Chair — Student Council</b> (2024–2025)
     <ul>
-      <li>Led planning and execution of events</li>
-      <li>Managed teams and coordination with faculty</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <b>Anchor, Organizer & PR Lead — PIET Jaipur</b> (2024–2025)
-    <ul>
-      <li>Anchored academic and cultural events</li>
-      <li>Led PR and outreach for Aarohan Fest</li>
+      <li>Led events and managed teams</li>
     </ul>
   </div>
 
   <h2>Education</h2>
   <div class="section">
-    <b>B.Tech (Computer Science & IoT)</b> — PIET Jaipur (2023–2027) <br>
-    <b>Senior Secondary (CBSE, PCM)</b> — Cambridge Court School (2022) <br>
-    <b>Secondary (CBSE)</b> — DPS Jammu (2020) — Head Boy
+    <b>B.Tech (CSE & IoT)</b> — PIET Jaipur (2023–2027)
   </div>
 
   <h2>Certifications</h2>
   <div class="section">
     <ul>
-      <li>IBM Data Science Professional Certificate 
-        — <a href="#">Add Credential Link</a></li>
-      <li>Microsoft AI/ML Engineering Certificate 
-        — <a href="#">Add Credential Link</a></li>
-      <li>IBM RAG and Agentic AI Certificate 
-        — <a href="#">Add Credential Link</a></li>
-      <li>Google Cloud Foundations 
-        — <a href="#">Add Credential Link</a></li>
+      <li>IBM Data Science — <a href="#" target="_blank">Credential</a></li>
+      <li>Microsoft AI/ML — <a href="#" target="_blank">Credential</a></li>
+      <li>IBM RAG — <a href="#" target="_blank">Credential</a></li>
+      <li>Google Cloud — <a href="#" target="_blank">Credential</a></li>
     </ul>
   </div>
+
+</div>
 
 </body>
 </html>
