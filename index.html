@@ -105,6 +105,30 @@
       font-size: 12px;
       margin-left: 6px;
     }
+      @media print {
+    body {
+      background: white;
+      display: block;
+    }
+
+    .page {
+      box-shadow: none;
+      border-radius: 0;
+      margin: 0;
+      width: 100%;
+      min-height: auto;
+      padding: 20px 30px;
+    }
+
+    .btn {
+      display: none;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
 
   </style>
 </head>
@@ -125,7 +149,7 @@
       </div>
     </div>
 
-    <a class="btn" href="resume.pdf" target="_blank">Download PDF</a>
+    <a class="btn" href="#" onclick="window.print()">Download PDF</a>
   </div>
 
   <h2>Overview</h2>
@@ -226,9 +250,11 @@
 
   <h2>Education</h2>
   <div class="section">
-    <b>B.Tech (CSE)</b> — PIET Jaipur 
-    <b>Senior Secondary Education (CBSE)</b> — Cambridge Court High School Jaipur
-    <b>Secondary Education (CBSE)</b> — Delhi Public School Jammu
+    <ul>
+    <li>B.Tech (CSE)</b> — PIET Jaipur 
+    <li>Senior Secondary Education (CBSE)</b> — Cambridge Court High School Jaipur
+    <li>Secondary Education (CBSE)</b> — Delhi Public School Jammu
+    </ul>
   </div>
 
   <h2>Certifications</h2>
